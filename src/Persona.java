@@ -1,6 +1,3 @@
-/**
- * Created by juanxxiii on 25/11/2016.
- */
 public class Persona {
     private int id;
     private String name;
@@ -22,5 +19,21 @@ public class Persona {
                 ", lastName='" + lastName + '\'' +
                 ", job='" + job + '\'' +
                 '}';
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public String getJob() {
+        return job;
     }
 }
