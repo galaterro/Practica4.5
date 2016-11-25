@@ -28,7 +28,7 @@ public class FileReader {
                 Element elem = (Element) n;
 
                 for (int j = 0; j < ((Element) n).getElementsByTagName("persona").getLength(); j++) {
-                    System.out.println(elem.getAttribute("id") +"\t\t" + elem.getElementsByTagName("nombre").item(j).getTextContent() + "\t\t" +
+                    System.out.println(((Element) n).getElementsByTagName("persona").item(j).getAttributes().getNamedItem("id") +"\t\t" + elem.getElementsByTagName("nombre").item(j).getTextContent() + "\t\t" +
                             elem.getElementsByTagName("apellido").item(j).getTextContent() + "\t\t" +
                             elem.getElementsByTagName("profesion").item(j).getTextContent());
                 }
